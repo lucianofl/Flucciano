@@ -1,0 +1,175 @@
+.contacto {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    background-image: url(https://www.myoutfie.com/historias/wp-content/uploads/2019/02/shopping-online-peru.jpg);
+    background-size: cover;
+    overflow-x:hidden
+}
+
+.fondo {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.contact-us {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.contact-us h3,
+p {
+    color: $foot-color;
+}
+
+.address {
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.address span {
+    color: #7B1FA2
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.icons i {
+    font-size: 20px
+}
+
+.forms {
+    padding: 20px
+}
+
+.inputs input {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #eee
+}
+
+.inputs input:focus {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid $foot-color;
+    box-shadow: none
+}
+
+.inputs textarea {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+    resize: none
+}
+
+.inputs textarea:focus {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid $foot-color;
+    box-shadow: none;
+    resize: none
+}
+.form-control {
+    padding: .375rem .25rem
+}
+/*Header contacto*/
+.header{
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/countrysites-tatamotors-com/countrysite/wp-content/uploads/sites/8/2016/04/27091404/contact-us-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header__logo{
+    height: 300px;
+}
+.menu-header__item{
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0,5s;
+    color: #fff;
+}
+.header_nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 1s ease;
+    z-index: 1000;
+    height: 150px;
+}
+.logo{
+    display: flex;
+    h1{
+        font-size: 25px;
+        color: #fff;
+        font-weight: 100px;
+    }
+    .F{
+        color: black;
+        background-color: $foot-color;
+        font-size: 50px;
+        font-weight: bold;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 5px;
+    }
+    img{
+        width: 200px;
+        align-items: center;
+        font-weight: bold;
+    }
+    .text{
+        color: rgb(245, 245, 245);
+    }
+}
+.menu-header{
+    display: flex;
+}
+.menu-header__item{
+    list-style: none;
+    margin: 10px;
+    a{
+        color: rgb(5, 5, 5);
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 1s ease;
+        &:hover{
+            padding: 5px 10px;
+            background: $foot-color;
+            color: rgb(7, 11, 248);
+            border-radius: 15px;
+        }
+    }
+}
+@media screen and (max-width: 870px){
+    .header_nav{
+        width: 100%;
+        display: flex;
+        padding: 25px;
+        transition: all 1s ease;
+        flex-wrap: wrap;
+    }
+    .menu-header{
+        display: block;
+    }
+    .header{
+        width: 100%;
+        height: 50vh;
+        background-image: url(https://s3-ap-southeast-1.amazonaws.com/countrysites-tatamotors-com/countrysite/wp-content/uploads/sites/8/2016/04/27091404/contact-us-banner.jpg);
+        background-size: cover;
+    }
+}

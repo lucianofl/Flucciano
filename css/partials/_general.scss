@@ -1,0 +1,210 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color:#fff;
+    display: block;
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    text-decoration: none; 
+}
+.lead{
+    border: 2px solid #111;
+    background-color: $foot-color;
+    color: $general-color;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: auto;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: $general-color;
+}
+h2{
+    color: $general-color;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+a:hover, h1{
+    text-decoration: none;
+    color: $general-color; 
+}
+.parte1Web{
+    background-color: #fff;
+}
+
+/*Imagenes*/
+.sec{
+    width: 50%;
+    margin: auto;
+}
+#galeria {
+    .col-lg-4{
+        padding: 25px;
+        margin: 0 !important;
+    }
+    img{
+        width: 100%;
+        height: 250px;
+        &:hover{
+            border: 5px solid $galery-color;
+            cursor: pointer;
+        }
+    }
+}
+.card1{
+    position: absolute;
+    width: 20%;
+    border: none;
+}
+.card img:hover{
+    border: 5px solid $galery-color;
+    cursor: pointer;
+}
+.card-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+.card2{
+    position: absolute;
+    padding: 20px;
+    img:hover{
+        border: 5px solid $galery-color;
+        cursor: pointer;
+    }
+    p{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h5{ 
+        text-transform: uppercase;
+        text-align: center;
+        
+    }
+}
+#rightSide img:hover{
+    border: 5px solid $galery-color;
+    cursor: pointer;
+}
+.text-title{
+    border: 5px solid $foot-color;
+    width: 20%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: $foot-color;
+}
+/*Finaliza sec imagenes*/
+.divider{
+    border-top: 2px solid rgb(143, 143, 143);
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 25px 10px 25px 10px;
+}
+
+.box{
+    width:300px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+.slide-img{
+    height: 450px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+    a{
+        color: #222222;
+        margin: 5px 0px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding-right: 8px;
+    }
+}
+.type{
+    span{
+        color: gainsboro;
+    }
+}
+.price{
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92,95,230,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.buy-btn:hover{
+    color: #FFFFFF;
+    background-color: #f15fa3;
+    transition: all ease 0.3s;
+}
+.overlay{
+    visibility: hidden;
+}
+.slide-img:hover .overlay{
+    visibility: visible;
+    animation: fade 1s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

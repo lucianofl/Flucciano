@@ -1,0 +1,265 @@
+.contacto {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  background-image: url(https://www.myoutfie.com/historias/wp-content/uploads/2019/02/shopping-online-peru.jpg);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.fondo {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.contact-us {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-us h3,
+p {
+  color: #bbeb10;
+}
+
+.address {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+.address span {
+  color: #7B1FA2;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons i {
+  font-size: 20px;
+}
+
+.forms {
+  padding: 20px;
+}
+
+.inputs input {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #eee;
+}
+
+.inputs input:focus {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #bbeb10;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.inputs textarea {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #eee;
+  width: 100%;
+  resize: none;
+}
+
+.inputs textarea:focus {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #bbeb10;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  resize: none;
+}
+
+.form-control {
+  padding: .375rem .25rem;
+}
+
+/*Header contacto*/
+.header {
+  width: 100%;
+  height: 50vh;
+  background-image: url(https://s3-ap-southeast-1.amazonaws.com/countrysites-tatamotors-com/countrysite/wp-content/uploads/sites/8/2016/04/27091404/contact-us-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header__logo {
+  height: 300px;
+}
+
+.menu-header__item {
+  margin: 0 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: 0,5s;
+  transition: 0,5s;
+  color: #fff;
+}
+
+.header_nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 1000;
+  height: 150px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo h1 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 100px;
+}
+
+.logo .F {
+  color: black;
+  background-color: #bbeb10;
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 5px;
+}
+
+.logo img {
+  width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.logo .text {
+  color: whitesmoke;
+}
+
+.menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-header__item {
+  list-style: none;
+  margin: 10px;
+}
+
+.menu-header__item a {
+  color: #050505;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.menu-header__item a:hover {
+  padding: 5px 10px;
+  background: #bbeb10;
+  color: #070bf8;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 870px) {
+  .header_nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 25px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu-header {
+    display: block;
+  }
+  .header {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/countrysites-tatamotors-com/countrysite/wp-content/uploads/sites/8/2016/04/27091404/contact-us-banner.jpg);
+    background-size: cover;
+  }
+}
+
+.color4 {
+  background: #000000;
+}
+
+h5 {
+  color: #bbeb10;
+}
+
+.arte, li, #derechos, p {
+  color: #f8f8f8;
+}
+
+#derechos {
+  letter-spacing: 1px;
+}
+
+.A {
+  color: white;
+}
+
+.A:hover {
+  color: #bbeb10;
+}
+
+#F {
+  background-color: #bbeb10;
+}
+
+.card2 {
+  padding: 1% 5%;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 4px;
+}
+
+.divison {
+  border-top: 2px solid #bbeb10;
+}
+/*# sourceMappingURL=contacto.css.map */
