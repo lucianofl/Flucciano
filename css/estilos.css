@@ -363,7 +363,7 @@ a:hover, h1 {
   letter-spacing: 0.5px;
 }
 
-.overlay {
+.text-buy {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -412,11 +412,11 @@ a:hover, h1 {
   transition: all ease 0.3s;
 }
 
-.overlay {
+.text-buy {
   visibility: hidden;
 }
 
-.slide-img:hover .overlay {
+.slide-img:hover .text-buy {
   visibility: visible;
   -webkit-animation: fade 1s;
           animation: fade 1s;
