@@ -3,60 +3,6 @@
   padding: 0;
 }
 
-/*Media query posicion menu*/
-@media screen and (max-width: 1500px) {
-  #navbarBoton {
-    padding-left: 40%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #navbarBoton {
-    padding-left: 30%;
-  }
-}
-
-/*Header*/
-@media screen and (max-width: 870px) {
-  .header_nav {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 25px;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .menu-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-/*Catalogo*/
-@media screen and (max-width: 1400px) {
-  .cata {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 header {
   width: 100%;
   height: 100vh;
@@ -203,81 +149,6 @@ a:hover, h1 {
   color: #000000;
 }
 
-.parte1Web {
-  background-color: #fff;
-}
-
-/*Imagenes*/
-.sec {
-  width: 50%;
-  margin: auto;
-}
-
-#galeria .col-lg-4 {
-  padding: 25px;
-  margin: 0 !important;
-}
-
-#galeria img {
-  width: 100%;
-  height: 250px;
-}
-
-#galeria img:hover {
-  border: 5px solid #dfdfdf;
-  cursor: pointer;
-}
-
-.card1 {
-  position: absolute;
-  width: 20%;
-  border: none;
-}
-
-.card img:hover {
-  border: 5px solid #dfdfdf;
-  cursor: pointer;
-}
-
-.card-title {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2rem;
-}
-
-.card2 {
-  position: absolute;
-  padding: 20px;
-}
-
-.card2 img:hover {
-  border: 5px solid #dfdfdf;
-  cursor: pointer;
-}
-
-.card2 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card2 h5 {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#rightSide img:hover {
-  border: 5px solid #dfdfdf;
-  cursor: pointer;
-}
-
-.text-title {
-  border: 5px solid #bbeb10;
-  width: 20%;
-  margin: auto;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: black;
-  color: #bbeb10;
-}
-
-/*Finaliza sec imagenes*/
 .divider {
   border-top: 2px solid #8f8f8f;
 }
@@ -344,7 +215,7 @@ a:hover, h1 {
 }
 
 .type a {
-  color: #222222;
+  color: #ffffff;
   margin: 5px 0px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -352,11 +223,11 @@ a:hover, h1 {
 }
 
 .type span {
-  color: gainsboro;
+  color: #bbeb10;
 }
 
 .price {
-  color: #333333;
+  color: #bbeb10;
   font-weight: 600;
   font-size: 1.1rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -441,6 +312,79 @@ a:hover, h1 {
 }
 
 /*Carrousel*/
+.catalogo {
+  margin: auto;
+  background-color: #000000;
+  width: 90%;
+}
+
+.catalogo__carousel {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 90%;
+  background-color: #000000;
+}
+
+#catalogo__indicadores {
+  left: 0;
+  top: auto;
+  bottom: -70;
+}
+
+#catalogo__indicadores li {
+  background: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 15px;
+}
+
+#catalogo__indicadores .active {
+  background: #bbeb10;
+}
+
+.single-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#colorfondo {
+  background-color: #000000;
+  width: 90%;
+  height: 150px;
+  margin: auto;
+  margin-bottom: -88px;
+}
+
+#colorfondo__title {
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #bbeb10;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.catalogo__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .color4 {
   background: #000000;
 }
@@ -486,5 +430,87 @@ ul li {
 
 .divison {
   border-top: 2px solid #bbeb10;
+}
+
+@media screen and (max-width: 1500px) {
+  #navbarBoton {
+    padding-left: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #navbarBoton {
+    padding-left: 30%;
+  }
+}
+
+/*Header*/
+@media screen and (max-width: 870px) {
+  .header_nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 25px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*Catalogo*/
+@media screen and (max-width: 1400px) {
+  .cata {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  #colorfondo__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #bbeb10;
+    font-size: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #colorfondo__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #bbeb10;
+    font-size: 3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
