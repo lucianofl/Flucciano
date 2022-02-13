@@ -1,82 +1,55 @@
 *{
     margin: 0;
     padding: 0;
-}
-@mixin header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/111/1015/617/clothes-hangers-rack-wallpaper-preview.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    
-}
-header{
-    @include header;
-}
-.header__logo{
-    height: 300px;
-}
-.menu-header__item{
-    margin: 0 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0,5s;
-    color: #fff;
-}
-.header_nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px;
-    transition: all 1s ease;
-    z-index: 1000;
-    height: 150px;
-}
-.logo{
-    display: flex;
-    h1{
-        font-size: 25px;
-        color: #fff;
-        font-weight: 100px;
-    }
-    .F{
-        color: black;
-        background-color: $foot-color;
-        font-size: 50px;
-        font-weight: bold;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin: 5px;
-    }
-    img{
-        width: 200px;
-        align-items: center;
-        font-weight: bold;
-    }
-    .text{
-        color: rgb(245, 245, 245);
-    }
-}
-.menu-header{
-    display: flex;
-}
-.menu-header__item{
+    text-decoration: none;
     list-style: none;
-    margin: 10px;
-    a{
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        transition: all 1s ease;
-        &:hover{
-            padding: 5px 10px;
-            background: $foot-color;
-            color: black;
-            border-radius: 15px;
+    box-sizing: border-box;
+}
+nav{
+    background: rgb(0, 0, 0);
+    height: 230px;
+    width: 100%;
+    .sticky{
+        float: right;
+        margin-right: 20px;
+        li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            a{
+                color: #fff;
+                font-size: 18px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+            }
+            a:hover{
+                background: $foot-color;
+            }
         }
     }
-    
 }
-
+li a.active{
+    color: black;
+    background: $foot-color;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 200px;
+}
