@@ -170,13 +170,17 @@
   text-decoration: none;
 }
 
+.social {
+  background-color: black;
+}
+
 .social-fot {
   background-color: #1e2353;
 }
 
 .socialnet {
   font-size: 20px;
-  color: #fff;
+  color: #fafafa;
   margin: auto;
 }
 
