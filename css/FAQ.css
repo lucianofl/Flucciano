@@ -26,6 +26,52 @@
   }
 }
 
+@media screen and (max-width: 1320px) {
+  .imagenella {
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+  }
+  .imagenella2 {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+  }
+  .imagenel {
+    width: 100%;
+    height: 500px;
+    background-position: center left;
+  }
+  .imagenel2 {
+    width: 100%;
+    height: 500px;
+    background-position: center left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imagenella {
+    width: 100%;
+    height: 100vh;
+    background-position: top center;
+  }
+  .imagenella2 {
+    width: 100%;
+    height: 100vh;
+    background-position: top center;
+  }
+  .imagenel {
+    width: 100%;
+    height: 100vh;
+    background-position: top left;
+  }
+  .imagenel2 {
+    width: 100%;
+    height: 100vh;
+    background-position: center left;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -177,5 +223,40 @@ header {
 
 .btn {
   text-decoration: none;
+}
+
+.social {
+  background-color: black;
+}
+
+.socialnet {
+  font-size: 20px;
+  color: #fff;
+  margin: auto;
+}
+
+.iconfb, .icontw, .iconlink, .iconig {
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 30px;
+}
+
+.linea {
+  width: 60px;
+}
+
+.colecciones {
+  text-decoration: none;
+  color: black;
+}
+
+.colecciones a {
+  text-decoration: none;
+  color: black;
+}
+
+.colecciones a:hover {
+  color: #2100b3;
 }
 /*# sourceMappingURL=FAQ.css.map */

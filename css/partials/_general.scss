@@ -14,6 +14,7 @@ body{
     margin: 0;
     min-height: 100vh;
     text-decoration: none; 
+    overflow-x: hidden;
 }
 
 .flucci{
@@ -57,6 +58,7 @@ h5{
 .imagenella{
     background-image: url(/fotos/Ellas.jpg);
     background-size: cover;
+    width: 100%;
     height: 100vh;
     transition: all ease-in 0.8s;
     cursor: pointer;
@@ -68,6 +70,7 @@ h5{
 .imagenella2{
     background-image: url(/fotos/Ellas2.jpg);
     background-size: cover;
+    width: 100%;
     height: 100vh;
     transition: all ease-in 0.8s;
     cursor: pointer;
@@ -77,6 +80,31 @@ h5{
     transition: all ease-in 0.8s;
 }
 /*Imagenes con efecto ellas*/
+/*Imagenes con efecto el*/
+.imagenel{
+    background-image: url(/fotos/el.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transition: all ease-in 0.8s;
+    cursor: pointer;
+}
+.imagenel:hover{
+    background-image: url(/fotos/el2.jpg);
+    transition: all ease-in 0.8s;
+}
+.imagenel2{
+    background-image: url(/fotos/boda.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transition: all ease-in 0.8s;
+    cursor: pointer;
+}
+.imagenel2:hover{
+    background-image: url(/fotos/boda2.jpg);
+    transition: all ease-in 0.8s;
+}
 .btn{
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
