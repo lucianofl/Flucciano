@@ -81,112 +81,21 @@ body {
   background-color: #e5e7e1;
 }
 
-header {
-  width: 100%;
-  height: 50vh;
-  background-image: url(https://p4.wallpaperbetter.com/wallpaper/111/1015/617/clothes-hangers-rack-wallpaper-preview.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.header__logo {
-  height: 300px;
-}
-
-.menu-header__item {
-  margin: 0 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  -webkit-transition: 0,5s;
-  transition: 0,5s;
-  color: #fff;
-}
-
-.header_nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 25px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  z-index: 1000;
-  height: 150px;
-}
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo h1 {
-  font-size: 25px;
-  color: #fff;
-  font-weight: 100px;
-}
-
-.logo .F {
-  color: black;
-  background-color: #bbeb10;
-  font-size: 50px;
-  font-weight: bold;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 5px;
-}
-
-.logo img {
-  width: 200px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: bold;
-}
-
-.logo .text {
-  color: whitesmoke;
-}
-
-.menu-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu-header__item {
-  list-style: none;
-  margin: 10px;
-}
-
-.menu-header__item a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.menu-header__item a:hover {
-  padding: 5px 10px;
-  background: #bbeb10;
-  color: black;
-  border-radius: 15px;
-}
-
 .contenedor {
   background-color: #e5e7e1;
 }
 
-#faq {
+.Title-FAQ {
+  color: #ffffff;
+}
+
+.card-body {
   background-color: #fff;
+  border-radius: 1%;
+}
+
+#faq {
+  background-color: #131111;
   height: 900px;
   padding: 50px 0;
 }
@@ -214,7 +123,7 @@ header {
 }
 
 .acordion .card-header .btn {
-  color: #0c7f90;
+  color: #ffffff;
   width: 100%;
   text-align: left;
   padding-left: 0;
@@ -225,8 +134,94 @@ header {
   text-decoration: none;
 }
 
-.social {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-light .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.brand-logo {
+  font-family: 'Old Standard TT', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ececec;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.nav-link {
+  font-family: 'Prata', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#menu a {
+  position: relative;
+  display: block;
+  padding: 5px;
+  color: black;
+}
+
+#menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#003cff), color-stop(#003cff), to(#d606f1));
+  background: linear-gradient(to right, #003cff, #003cff, #d606f1);
+  z-index: 1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+#menu a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+.social-fot {
+  background-color: #1e2353;
 }
 
 .socialnet {

@@ -273,8 +273,16 @@ h5 {
   background-color: rgba(241, 238, 238, 0.932);
 }
 
-.social {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+.social-fot {
+  background-color: #1e2353;
 }
 
 .socialnet {
