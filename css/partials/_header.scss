@@ -5,51 +5,66 @@
     list-style: none;
     box-sizing: border-box;
 }
-nav{
-    background: rgb(0, 0, 0);
-    height: 230px;
-    width: 100%;
-    .sticky{
-        float: right;
-        margin-right: 20px;
-        li{
-            display: inline-block;
-            line-height: 80px;
-            margin: 0 5px;
-            a{
-                color: #fff;
-                font-size: 18px;
-                padding: 7px 13px;
-                border-radius: 3px;
-                text-transform: uppercase;
-            }
-            a:hover{
-                background: $foot-color;
-            }
-        }
-    }
+.navbar-light .navbar-toggler {
+    color: $color-blanco;
+    border-color: $color-blanco;
 }
-li a.active{
-    color: black;
-    background: $foot-color;
-    transition: .5s;
+.container-fluid1{
+    height: 85vh;
+    background-image: url(/fotos/Manga.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: all ease-in 0.8s;
 }
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.container-fluid1:hover{
+    background-image: url(/fotos/Reloj.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: all ease 0.8s;
 }
-#check{
-    display: none;
+.bg-light {
+    background-color: rgb(255, 255, 255)!important;
 }
-.enlace{
+.brand-logo{
+    font-family: 'Old Standard TT', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: $color-blanco;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $color-blanco;
+}
+.nav-link{
+    font-family: 'Prata', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#menu a {
+    position: relative;
+    display: block;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+#menu a::before {
+    content: '';
     position: absolute;
-    padding: 20px 50px;
-}
-.logo{
-    height: 200px;
-}
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #003cff, #003cff, #d606f1);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #menu a:hover::before {
+    transform: scaleX(1);
+  }
