@@ -11,14 +11,14 @@
 }
 .container-fluid1{
     height: 85vh;
-    background-image: url(/fotos/Manga.jpg);
+    background-image: url(../fotos/Manga.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     transition: all ease-in 0.8s;
 }
 .container-fluid1:hover{
-    background-image: url(/fotos/Reloj.jpg);
+    background-image: url(../fotos/Reloj.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

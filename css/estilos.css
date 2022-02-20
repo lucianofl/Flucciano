@@ -14,7 +14,7 @@
 
 .container-fluid1 {
   height: 85vh;
-  background-image: url(/fotos/Manga.jpg);
+  background-image: url(../fotos/Manga.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -23,7 +23,7 @@
 }
 
 .container-fluid1:hover {
-  background-image: url(/fotos/Reloj.jpg);
+  background-image: url(../fotos/Reloj.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -167,7 +167,7 @@ h5 {
 
 /*Imagenes con efecto ellas*/
 .imagenella {
-  background-image: url(/fotos/Ellas.jpg);
+  background-image: url(../fotos/Ellas.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -177,13 +177,13 @@ h5 {
 }
 
 .imagenella:hover {
-  background-image: url(/fotos/Ellablanco.jpg);
+  background-image: url(../fotos/Ellablanco.jpg);
   -webkit-transition: all ease-in 0.8s;
   transition: all ease-in 0.8s;
 }
 
 .imagenella2 {
-  background-image: url(/fotos/Ellas2.jpg);
+  background-image: url(../fotos/Ellas2.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -193,7 +193,7 @@ h5 {
 }
 
 .imagenella2:hover {
-  background-image: url(/fotos/Ellanegro.jpg);
+  background-image: url(../fotos/Ellanegro.jpg);
   -webkit-transition: all ease-in 0.8s;
   transition: all ease-in 0.8s;
 }
@@ -201,7 +201,7 @@ h5 {
 /*Imagenes con efecto ellas*/
 /*Imagenes con efecto el*/
 .imagenel {
-  background-image: url(/fotos/el.jpg);
+  background-image: url(../fotos/el.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -211,13 +211,13 @@ h5 {
 }
 
 .imagenel:hover {
-  background-image: url(/fotos/el2.jpg);
+  background-image: url(../fotos/el2.jpg);
   -webkit-transition: all ease-in 0.8s;
   transition: all ease-in 0.8s;
 }
 
 .imagenel2 {
-  background-image: url(/fotos/boda.jpg);
+  background-image: url(../fotos/boda.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -227,7 +227,7 @@ h5 {
 }
 
 .imagenel2:hover {
-  background-image: url(/fotos/boda2.jpg);
+  background-image: url(../fotos/boda2.jpg);
   -webkit-transition: all ease-in 0.8s;
   transition: all ease-in 0.8s;
 }

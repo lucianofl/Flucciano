@@ -56,7 +56,7 @@ h5{
 }
 /*Imagenes con efecto ellas*/
 .imagenella{
-    background-image: url(/fotos/Ellas.jpg);
+    background-image: url(../fotos/Ellas.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -64,11 +64,11 @@ h5{
     cursor: pointer;
 }
 .imagenella:hover{
-    background-image: url(/fotos/Ellablanco.jpg);
+    background-image: url(../fotos/Ellablanco.jpg);
     transition: all ease-in 0.8s;
 }
 .imagenella2{
-    background-image: url(/fotos/Ellas2.jpg);
+    background-image: url(../fotos/Ellas2.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -76,13 +76,13 @@ h5{
     cursor: pointer;
 }
 .imagenella2:hover{
-    background-image: url(/fotos/Ellanegro.jpg);
+    background-image: url(../fotos/Ellanegro.jpg);
     transition: all ease-in 0.8s;
 }
 /*Imagenes con efecto ellas*/
 /*Imagenes con efecto el*/
 .imagenel{
-    background-image: url(/fotos/el.jpg);
+    background-image: url(../fotos/el.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -90,11 +90,11 @@ h5{
     cursor: pointer;
 }
 .imagenel:hover{
-    background-image: url(/fotos/el2.jpg);
+    background-image: url(../fotos/el2.jpg);
     transition: all ease-in 0.8s;
 }
 .imagenel2{
-    background-image: url(/fotos/boda.jpg);
+    background-image: url(../fotos/boda.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -102,7 +102,7 @@ h5{
     cursor: pointer;
 }
 .imagenel2:hover{
-    background-image: url(/fotos/boda2.jpg);
+    background-image: url(../fotos/boda2.jpg);
     transition: all ease-in 0.8s;
 }
 .btn{

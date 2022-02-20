@@ -71,7 +71,7 @@
   width: 100%;
   height: auto;
   background: #000;
-  background-image: url(/fotos/contacto.jpg);
+  background-image: url(../fotos/contacto.jpg);
   background-size: cover;
   background-position: bottom center;
   overflow-x: hidden;
