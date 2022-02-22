@@ -138,10 +138,11 @@ h5{
     font-family: 'Cinzel', serif;
 }
 .joyas-img{
-    background-image: url(/fotos/pendientes1.jpg);
+    background-image: url(../fotos/pendientes1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    width: 100%;
     height: 85vh;
 }
 .joyas-subtitle{
