@@ -41,9 +41,14 @@
     color: $color-blanco;
 }
 .nav-link{
-    font-family: 'Prata', serif;
-    font-size: 1.2rem;
+    color: rgb(255, 254, 254);
+    font-family: 'Playfair Display SC', serif;
+
     font-weight: bold;
+    font-size: 1.3rem;
+}
+.nav-link:hover{
+    color: #fff;
 }
 #menu a {
     position: relative;

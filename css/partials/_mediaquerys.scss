@@ -67,4 +67,66 @@
         background-position: center left;
     }
 }
+@media screen and (max-width: 1200px){
+    .joyas-subtitle{
+        top: 50px;
+        max-width: 27%;
+    }
+}
+@media screen and (max-width: 1050px){
+    .joyas-img{
+        width: 100%;
+        height: 100vh;
+        background-position: left center;
+    }
+    .joyas-subtitle{
+        top: 250px;
+        font-size: 15px;
+    }
+    #title-joyas{
+        font-size: 50px;
+    }
+    #text-joyas{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .joyas-subtitle{
+        max-width: none;
+        top: 300px;
+        margin: auto;
+    }
+    #title-joyas{
+        color: rgb(255, 255, 255);
+    }
+    #text-joyas{
+        color: rgb(255, 255, 255);
+    }
+    .btn{
+        color: rgb(255, 255, 255);
+        border-color: aliceblue;
+    }
+}
+@media screen and (max-width: 320px){
+    .joyas-subtitle{
+        top: 200px;
+    }
+    #title-joyas{
+        font-size: 30px;
+    }
+    #text-joyas{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 240px){
+    .joyas-subtitle{
+        top: 170px;
+    }
+    #title-joyas{
+        font-size: 15px;
+    }
+    #text-joyas{
+        font-size: 5px;
+    }
+}
 

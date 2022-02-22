@@ -58,9 +58,14 @@
 }
 
 .nav-link {
-  font-family: 'Prata', serif;
-  font-size: 1.2rem;
+  color: #fffefe;
+  font-family: 'Playfair Display SC', serif;
   font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nav-link:hover {
+  color: #fff;
 }
 
 #menu a {
@@ -132,9 +137,8 @@ h5 {
 }
 
 .text__quienes {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #2d3050;
-  text-align: justify;
   font-size: 1.4rem;
 }
 
@@ -147,7 +151,7 @@ h5 {
 }
 
 /*Contenido body*/
-#title-ellas {
+#title-ellas, #title-joyas {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -156,7 +160,7 @@ h5 {
   font-family: 'Playfair Display', serif;
 }
 
-#text-ellas {
+#text-ellas, #text-joyas {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -237,6 +241,7 @@ h5 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   width: 150px;
+  margin-bottom: 5px;
 }
 
 /*Termian contenido body*/
@@ -260,17 +265,32 @@ h5 {
   color: #fff;
 }
 
-.nav-link {
-  color: #fffefe;
-  font-family: 'Playfair Display', serif;
-}
-
-.nav-link:hover {
-  color: #fff;
-}
-
 .container-fluid {
   background-color: rgba(241, 238, 238, 0.932);
+}
+
+.joyas {
+  background-color: #b18478;
+}
+
+.joyas__title {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Cinzel', serif;
+}
+
+.joyas-img {
+  background-image: url(../fotos/pendientes1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 85vh;
+}
+
+.joyas-subtitle {
+  top: 250px;
 }
 
 * {
@@ -279,6 +299,14 @@ h5 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+}
+
+.footer-copyright {
+  background-color: black;
+}
+
+.text-copy {
+  color: #fff;
 }
 
 .social {
@@ -391,6 +419,73 @@ h5 {
     width: 100%;
     height: 100vh;
     background-position: center left;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .joyas-subtitle {
+    top: 50px;
+    max-width: 27%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .joyas-img {
+    width: 100%;
+    height: 100vh;
+    background-position: left center;
+  }
+  .joyas-subtitle {
+    top: 250px;
+    font-size: 15px;
+  }
+  #title-joyas {
+    font-size: 50px;
+  }
+  #text-joyas {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .joyas-subtitle {
+    max-width: none;
+    top: 300px;
+    margin: auto;
+  }
+  #title-joyas {
+    color: white;
+  }
+  #text-joyas {
+    color: white;
+  }
+  .btn {
+    color: white;
+    border-color: aliceblue;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .joyas-subtitle {
+    top: 200px;
+  }
+  #title-joyas {
+    font-size: 30px;
+  }
+  #text-joyas {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .joyas-subtitle {
+    top: 170px;
+  }
+  #title-joyas {
+    font-size: 15px;
+  }
+  #text-joyas {
+    font-size: 5px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
