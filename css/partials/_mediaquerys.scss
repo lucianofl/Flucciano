@@ -68,6 +68,12 @@
         font-size: 18px;
     }
 }
+@media screen and (max-width: 1000px){
+    .card__description{
+        display: none;
+    }
+
+}
 @media only screen and (max-width: 800px){
     .joyas-subtitle{
         max-width: none;
@@ -94,7 +100,20 @@
         height: 85vh;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
+    .catalogo{
+        display: flex;
+        flex-direction: column;
+    }
+    .card__text{
+        .card__title{
+            margin-bottom: 100px;
+        }
+        .card__shop{
+            margin-bottom: 600px;
+            font-size: 2.5vh;
+        }
+    }
     .imagenella{
         width: 100%;
         height: 100vh;
