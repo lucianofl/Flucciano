@@ -1,28 +1,3 @@
-@media screen and (max-width: 991px){
-    .bg-light {
-        background-color: rgb(253, 253, 253)!important;
-    }
-    #menu a {
-        position: relative;
-        display: block;
-        padding: 5px;
-        color: rgb(0, 0, 0);
-    }
-}
-@media screen and (max-width: 575px){
-    .row {
-        display: inline-block;
-        margin: auto;
-    }
-    .col-6{
-        max-width: 100%;
-    }
-}
-@media screen and (max-width: 991px){
-    #submenu{
-        display: none;
-    }
-}
 @media screen and (max-width: 1320px){
     .imagenella{
         width: 100%;
@@ -61,7 +36,7 @@
         top: 250px;
         font-size: 15px;
     }
-    #title-joyas{
+    #title-joyas, #title-joyas-men{
         font-size: 50px;
     }
     #text-joyas{
@@ -72,7 +47,24 @@
     .card__description{
         display: none;
     }
+    .flucciano{
+        font-size: 10vh;
+    }
 
+}
+@media screen and (max-width: 991px){
+    .bg-light {
+        background-color: rgb(253, 253, 253)!important;
+    }
+    #menu a {
+        position: relative;
+        display: block;
+        padding: 5px;
+        color: rgb(0, 0, 0);
+    }
+    #submenu{
+        display: none;
+    }
 }
 @media only screen and (max-width: 800px){
     .joyas-subtitle{
@@ -99,8 +91,6 @@
         width: 100%;
         height: 85vh;
     }
-}
-@media screen and (max-width: 769px){
     .catalogo{
         display: flex;
         flex-direction: column;
@@ -140,20 +130,37 @@
         height: 100vh;
         background-position: center left;
     }
+    .flucciano{
+        font-size: 15vw;
+        margin-bottom: 100px;
+        margin-right: 10px;
+    }
 }
 @media screen and (max-height: 700px){
     .joyas-subtitle{
         top: 20px;
+    }
+    .flucciano{
+        font-size: 15vw;
+    }
+}
+@media screen and (max-width: 575px){
+    .row {
+        display: inline-block;
+        margin: auto;
+    }
+    .col-6{
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 320px){
     .joyas-subtitle{
         top: 200px;
     }
-    #title-joyas{
+    #title-joyas, #title-joyas-men{
         font-size: 30px;
     }
-    #text-joyas{
+    #text-joyas, #text-joyas-men{
         font-size: 12px;
     }
 }
@@ -161,11 +168,14 @@
     .joyas-subtitle{
         top: 170px;
     }
-    #title-joyas{
-        font-size: 15px;
+    #title-joyas, #title-joyas-men{
+        font-size: 15vw;
     }
     #text-joyas{
         font-size: 5px;
+    }
+    #text-joyas-men{
+        display: none;
     }
 }
 

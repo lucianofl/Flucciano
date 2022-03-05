@@ -1,34 +1,42 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
 }
 
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/*HEADER Y PORTADA*/
 .navbar-light .navbar-toggler {
   color: #fff;
   border-color: #fff;
 }
 
-.container-fluid1 {
-  height: 85vh;
-  background-image: url(../fotos/Manga.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  -webkit-transition: all ease-in 0.8s;
-  transition: all ease-in 0.8s;
+.flucciano {
+  color: #cfcc03;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 450px;
+  text-transform: uppercase;
+  font-family: 'Old Standard TT', serif;
+  font-size: 18vh;
 }
 
-.container-fluid1:hover {
-  background-image: url(../fotos/Reloj.jpg);
+.portada {
+  position: relative;
+  background: url(../fotos/portada1.jpg);
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  -webkit-transition: all ease 0.8s;
-  transition: all ease 0.8s;
 }
 
 .bg-light {
@@ -101,19 +109,7 @@
           transform: scaleX(1);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-}
-
-html, body {
-  max-width: 100% !important;
-  overflow-x: hidden !important;
-}
-
+/*TERMINA HEADER*/
 /*Footer*/
 .footer-copyright {
   background-color: black;
@@ -210,7 +206,7 @@ h5 {
 }
 
 /*Fin Quienes*/
-/*Contenido body*/
+/*Contenido body y titulos y texto de joyas*/
 #title-coleccion, #title-joyas {
   text-align: center;
   -webkit-box-pack: center;
@@ -231,13 +227,13 @@ h5 {
 
 /*Imagenes con efecto ellas*/
 .imagenella {
-  background-image: url(../fotos/Ellas.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
   -webkit-transition: all ease-in 0.8s;
   transition: all ease-in 0.8s;
   cursor: pointer;
+  background-image: url(../fotos/Ellas.jpg);
 }
 
 .imagenella:hover {
@@ -296,16 +292,6 @@ h5 {
   transition: all ease-in 0.8s;
 }
 
-.btn, .btn-joyas {
-  background-color: #000000;
-  color: #fff;
-  font-weight: bold;
-  font-family: 'Playfair Display', serif;
-  font-size: 19px;
-  width: 150px;
-  margin-bottom: 5px;
-}
-
 /*Termian contenido body*/
 .nav {
   background-color: #0e0d16;
@@ -334,6 +320,20 @@ h5 {
 
 .joyas {
   background-color: #b18478;
+  margin-bottom: 5px;
+}
+
+.joyas-men {
+  background-color: #000000;
+  margin-bottom: 5px;
+}
+
+.joyas__title-men {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #cfcc03;
+  font-family: 'Cinzel', serif;
 }
 
 .joyas__title {
@@ -355,6 +355,54 @@ h5 {
 
 .joyas-subtitle {
   top: 250px;
+}
+
+.btn, .btn-joyas {
+  background-color: #000000;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.joyas-img-men {
+  background-image: url(../fotos/Reloj.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: all ease-in 0.8s;
+  transition: all ease-in 0.8s;
+  cursor: pointer;
+}
+
+.joyas-img-men:hover {
+  background-image: url(../fotos/Manga.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: all ease-in 0.8s;
+  transition: all ease-in 0.8s;
+  cursor: pointer;
+}
+
+#title-joyas-men {
+  color: #cfcc03;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 70px;
+  font-family: 'Playfair Display', serif;
+}
+
+#text-joyas-men {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #bebb03;
+  font-size: 25px;
 }
 
 /*Fin Joyas*/
@@ -469,34 +517,7 @@ h5 {
   opacity: 1;
 }
 
-@media screen and (max-width: 991px) {
-  .bg-light {
-    background-color: #fdfdfd !important;
-  }
-  #menu a {
-    position: relative;
-    display: block;
-    padding: 5px;
-    color: black;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .row {
-    display: inline-block;
-    margin: auto;
-  }
-  .col-6 {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  #submenu {
-    display: none;
-  }
-}
-
+/*Fin catalogo*/
 @media screen and (max-width: 1320px) {
   .imagenella {
     width: 100%;
@@ -537,7 +558,7 @@ h5 {
     top: 250px;
     font-size: 15px;
   }
-  #title-joyas {
+  #title-joyas, #title-joyas-men {
     font-size: 50px;
   }
   #text-joyas {
@@ -547,6 +568,24 @@ h5 {
 
 @media screen and (max-width: 1000px) {
   .card__description {
+    display: none;
+  }
+  .flucciano {
+    font-size: 10vh;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .bg-light {
+    background-color: #fdfdfd !important;
+  }
+  #menu a {
+    position: relative;
+    display: block;
+    padding: 5px;
+    color: black;
+  }
+  #submenu {
     display: none;
   }
 }
@@ -576,9 +615,6 @@ h5 {
     width: 100%;
     height: 85vh;
   }
-}
-
-@media screen and (max-width: 769px) {
   .catalogo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -621,11 +657,29 @@ h5 {
     height: 100vh;
     background-position: center left;
   }
+  .flucciano {
+    font-size: 15vw;
+    margin-bottom: 100px;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-height: 700px) {
   .joyas-subtitle {
     top: 20px;
+  }
+  .flucciano {
+    font-size: 15vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .row {
+    display: inline-block;
+    margin: auto;
+  }
+  .col-6 {
+    max-width: 100%;
   }
 }
 
@@ -633,10 +687,10 @@ h5 {
   .joyas-subtitle {
     top: 200px;
   }
-  #title-joyas {
+  #title-joyas, #title-joyas-men {
     font-size: 30px;
   }
-  #text-joyas {
+  #text-joyas, #text-joyas-men {
     font-size: 12px;
   }
 }
@@ -645,11 +699,14 @@ h5 {
   .joyas-subtitle {
     top: 170px;
   }
-  #title-joyas {
-    font-size: 15px;
+  #title-joyas, #title-joyas-men {
+    font-size: 15vw;
   }
   #text-joyas {
     font-size: 5px;
+  }
+  #text-joyas-men {
+    display: none;
   }
 }
 /*# sourceMappingURL=catalogo.css.map */

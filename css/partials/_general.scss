@@ -8,12 +8,85 @@ html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
+/*HEADER Y PORTADA*/
+.navbar-light .navbar-toggler {
+    color: $color-blanco;
+    border-color: $color-blanco;
+}
+.flucciano{
+    color: $amarillo-color;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 450px;
+    text-transform: uppercase;
+    font-family: 'Old Standard TT', serif;
+    font-size: 18vh;
+}
+.portada{
+    position: relative;
+    background: url(../fotos/portada1.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bg-light {
+    background-color: rgb(255, 255, 255)!important;
+}
+.brand-logo{
+    font-family: 'Old Standard TT', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: $color-blanco;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $color-blanco;
+}
+.nav-link{
+    text-transform: uppercase;
+    color: rgb(255, 254, 254);
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.nav-link:hover{
+    color: $color-blanco;
+}
+#menu a {
+    position: relative;
+    display: block;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+#menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #003cff, #003cff, #d606f1);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #menu a:hover::before {
+    transform: scaleX(1);
+}
+/*TERMINA HEADER*/
 /*Footer*/
 .footer-copyright{
     background-color: black;
 }
 .text-copy{
-    color: #fff;
+    color: $color-blanco;
 }
 .social{
     background-color: black;
@@ -27,7 +100,7 @@ html, body {
     margin: auto;
 }
 .iconfb, .icontw, .iconlink, .iconig{
-    color: #fff;
+    color: $color-blanco;
     text-align: center;
     padding: 0.5rem;
     font-size: 30px;
@@ -51,7 +124,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:#fff;
+    background-color:$color-blanco;
     display: block;
     font-family: sans-serif;
     margin: 0;
@@ -87,7 +160,7 @@ h5{
     border-radius: 0.6%;
 }
 /*Fin Quienes*/
-/*Contenido body*/
+/*Contenido body y titulos y texto de joyas*/
 #title-coleccion, #title-joyas{
     text-align: center;
     justify-content: center;
@@ -101,13 +174,16 @@ h5{
     font-size: 25px;
 }
 /*Imagenes con efecto ellas*/
-.imagenella{
-    background-image: url(../fotos/Ellas.jpg);
+@mixin imagenes {
     background-size: cover;
     width: 100%;
     height: 100vh;
     transition: all ease-in 0.8s;
     cursor: pointer;
+}
+.imagenella{
+    @include imagenes;
+    background-image: url(../fotos/Ellas.jpg);
 }
 .imagenella:hover{
     background-image: url(../fotos/Ellablanco.jpg);
@@ -115,11 +191,7 @@ h5{
 }
 .imagenella2{
     background-image: url(../fotos/Ellas2.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    transition: all ease-in 0.8s;
-    cursor: pointer;
+    @include imagenes;
 }
 .imagenella2:hover{
     background-image: url(../fotos/Ellanegro.jpg);
@@ -129,11 +201,7 @@ h5{
 /*Imagenes con efecto el*/
 .imagenel{
     background-image: url(../fotos/el.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    transition: all ease-in 0.8s;
-    cursor: pointer;
+    @include imagenes;
 }
 .imagenel:hover{
     background-image: url(../fotos/el2.jpg);
@@ -141,24 +209,11 @@ h5{
 }
 .imagenel2{
     background-image: url(../fotos/boda.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    transition: all ease-in 0.8s;
-    cursor: pointer;
+    @include imagenes;
 }
 .imagenel2:hover{
     background-image: url(../fotos/boda2.jpg);
     transition: all ease-in 0.8s;
-}
-.btn, .btn-joyas{
-    background-color: #000000;
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Playfair Display', serif;
-    font-size: 19px;
-    width: 150px;
-    margin-bottom: 5px;
 }
 /*Termian contenido body*/
 .nav{
@@ -171,7 +226,7 @@ h5{
     display: flex;
     text-align: center;
     align-items: center;
-    color: #fff;
+    color: $color-blanco;
 }
 /*Joyas*/
 .container-fluid{
@@ -179,7 +234,20 @@ h5{
 }
 .joyas{
     background-color: #b18478 ;
+    margin-bottom: 5px;
 }
+.joyas-men{
+    background-color: #000000;
+    margin-bottom: 5px;
+}
+.joyas__title-men{
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #cfcc03;
+    font-family: 'Cinzel', serif;
+}
+
 .joyas__title{
     font-weight: bold;
     font-size: 30px;
@@ -198,6 +266,36 @@ h5{
 .joyas-subtitle{
     top: 250px;
 }
+.btn, .btn-joyas{
+    background-color: #000000;
+    color: $color-blanco;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.joyas-img-men{
+    background-image: url(../fotos/Reloj.jpg);
+    @include imagenes;
+}
+.joyas-img-men:hover{
+    background-image: url(../fotos/Manga.jpg);
+    @include imagenes;
+}
+#title-joyas-men{
+    color: #cfcc03;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+    font-family: 'Playfair Display', serif;
+}
+#text-joyas-men{
+    text-align: center;
+    justify-content: center;
+    color: #bebb03;
+    font-size: 25px;
+}
+
 /*Fin Joyas*/
 /*Catalogo*/
 .catalogo{
@@ -253,14 +351,14 @@ h5{
         text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
         font-weight: 8000;
         font-size: 2.5vh;
-        color: #fff;
+        color: $color-blanco;
         transform: translateY(30px);
         opacity: 0;
         transition: all 0.3s ease-out 0.2s;
     }
     .card__shop{
         font-size: 2vh;
-        color: #fff;
+        color: $color-blanco;
         background: #000000;
         display: inline-block;
         padding: 5px 10px;
@@ -283,3 +381,4 @@ h5{
     transform: translateY(30px);
     opacity: 1;
 }
+/*Fin catalogo*/
